@@ -1,0 +1,79 @@
+
+<div  *ngIf='current'>  
+    <div class="container" >
+        <div class="row" id="image">
+            
+              <div class="col-lg-4 jumbotron" *ngFor='let products of current'>
+                
+                <a [routerLink]="['/show-data',products.show.name]"> 
+                    <img [src]="products.show.image?.medium" alt="image" class="img-responsive">
+                 </a>   
+               
+                <!-- diplay show time/duration . Rating -->
+                
+              </div>
+       </div><!-- end of row -->
+    </div>  
+</div>  
+
+<!------<div class="card-header">
+        
+        
+    <div class="card-body">
+           
+        <div class="row">                                             
+          ------------ <div class='col-md-4'></div> --
+         
+        
+          
+          <div class='col-md-8'> 
+               
+            <div class='table-responsive'>
+                <div class='table'  *ngIf='current' id="tbl1">
+                        <img src="assets/images/d.png" alt="image" class="img-responsive" id="img2">
+                    <thead id="thead1">
+                        <tr>
+                            <th>Name</th>
+                            <th>Language</th>
+                            <th>Schedule</th>
+                            <th>Rating</th>
+                            <th>Network</th>
+                       - <th>Summary</th> --
+                            </tr>
+                        </thead>
+                        
+                        
+                        <tbody id="tdDetail">
+                             ---  <img src="assets/images/ajax-loader.gif">    
+                            <tr *ngFor='let products of current'>
+                                    
+                            <td><a [routerLink]="['/show-data',products.show.id]">{{products.show.name}}
+                            </a>
+                            </td>
+                            <td>{{products.show.language}}</td>
+                            <td>{{products.show.schedule.time}} {{products.show.schedule.days}}</td>
+                            <td *ngIf='products.show.rating'>{{products.show.rating.average}}</td>
+                            <td *ngIf='products.show.network'>{{products.show.network.name}}</td>
+                        -----   <td [innerHtml]='products.show.summary'>{{products.schedule }}</td>--
+                            </tr>
+                        </tbody>
+                    </div> 
+                </div>
+            </div>
+            <--<div class='col-md-12' *ngIf='current'><b><u>Summary:</u></b><br>
+                <div [innerHtml]='current.summary'></div> 
+                <td>{{products.schedule }}</td>
+            </div>-
+        </div>
+        
+           
+    </div>
+</div>
+---<div ui-view="header" autoscroll="true">
+   <router-outlet></router-outlet>
+
+</div>--->
+
+
+
+

@@ -1,0 +1,13 @@
+.card{
+    
+    height:100px;
+    width:100%;
+    box-shadow:0 0 50px gray;
+    border: 2 px solid gray;
+    background-color:lightgrey;
+    
+}
+h1{
+    font-style:normal;
+    text-align: center;
+}

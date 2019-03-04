@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+
+   
+    
+
+input.name{
+    margin-top: 10px;
+}
+#img1{
+    margin-top:50px;
+    
+}
+#list{
+    margin-top:50px;
+    text-align: justify;
+    font-style: oblique;
+    
+}
+/*current-show.component***/
+#image{
+    box-shadow:0 0 50px grey;
+    border: 2 px solid grey;
+    
+}
+
+

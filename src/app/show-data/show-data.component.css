@@ -1,0 +1,34 @@
+#btn1{
+    margin-top:50px;
+}
+#detail{
+    text-align: justify;
+    font-style:normal; 
+    
+    height:300px;
+    margin-top:50px;
+}
+#errormsg{
+font-size:  1.8em;
+font-display:red;
+
+
+}
+#summary{
+    margin-top:30px;
+    text-align: justify;
+    font-style: oblique;
+    overflow:hidden;
+    
+}
+
+
+
+.card{
+    margin-top:50px;
+    height:400px;
+    width:100%;
+    box-shadow:0 0 50px grey;
+    border: 2 px solid grey;
+    
+}
