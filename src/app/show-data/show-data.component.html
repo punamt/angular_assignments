@@ -68,133 +68,14 @@
                    </div>
                </div>
             </div>
-              
-              </div>
-        
-    
-  </div><!-- end of row -->
+         </div>
+      </div><!-- end of row -->
   <div class="col-lg-12" id="summary" [innerHtml]="currentShow.summary"></div>
+</div> <!---------end of if-------->
 
-
-        <div class='container' id="btn1">
-            <button class='btn btn-outline-secondary'
-                (click)= 'onBack()'  
-                 style='width:80px'>
-                <i class='fa fa-chevron-left'></i>Back
-              </button>
-             
-    </div>
-        
-  </div> <!---------end of if-------->
-
-  <router-outlet></router-outlet>
+  
   
 
-       <!------- <section class="row">
-             <div class="col-md-4" >
-                 <img [src]='currentShow.image.medium' class="img-responsive" id="img1">
-             </div>  
-             <div class="col-md-4" id="list">
-                <ul>
-                    <li><span>Name:  {{currentShow.name}}</span> </li><br>
-                    <li><span>Genres:  {{currentShow.genres}}</span> </li><br>
-                    <li><span>Status:  {{currentShow.status}}</span>   </li>  <br>   
-                    <li><span>Type:  {{currentShow.type}}</span> </li><br>
-                    <li><span>Premiered:  {{currentShow.premiered}}</span> </li><br>
-                    <li><span>Country:  {{currentShow.network.country.name}}</span> </li><br>
-                  </ul>
-
-             </div>
-       </section>   
-       <section id="summary">
-         <div [innerHtml]='currentShow.summary'></div>  
-       </section>    --->
-                
-        
-        
-                 
-            
-          
        
-      
-<!-------<nav class="navbar navbar-default">
-    <div class="container" *ngIf='currentShow'>
-        
-  
-    <div class="row"><br>
-        <div class="col-md-8">
-            <div class="col-md-4">Name</div>
-            <div class="col-md-4">{{currentShow.name}}</div>
-        </div>
-    </div>
-    <div class="row"><br>
-        <div class="col-md-8">
-          <div class="col-md-4">Genres</div>
-          <div class="col-md-8">{{currentShow.genres}}</div>
-        </div>
-    </div>
-    <div class="row"><br>
-          <div class="col-md-8">
-            <div class="col-md-4">Status</div>
-            <div class="col-md-8">{{currentShow.status}}</div>
-          </div>
-    </div>
-    <div class="row"><br>
-            <div class="col-md-8">
-              <div class="col-md-4">Type</div>
-              <div class="col-md-8">{{currentShow.type}}</div>
-            </div>
-      </div>
-      <div class="row"><br>
-          <div class="col-md-8">
-            <div class="col-md-4">Premiered</div>
-            <div class="col-md-8">{{currentShow.premiered}}</div>
-          </div>---->
-         
-            
-        
-    
-      
-  
-      
-   
-  
- 
-
-
-
-<!------<div class="card-header">
-
-
-    
-    <div class="card-body">
-        <div class="row"  *ngIf='currentShow'>                                             
-            <div class='col-md-4'>
-               <img [src]='currentShow.image.medium'>
-            </div>
-            <div >
-               <ul>
-                 <li>Genres:{{currentShow.genres}}</li>
-                 <li>Status:{{currentShow.status}}</li>
-                 <li>Type:{{currentShow.type}}</li>
-                 <li>Premiered:{{currentShow.premiered}}</li>
-               </ul>
-            </div><br><br>
-            <div class='col-md-4'>
-                 <div>Summary</div>
-            </div>   
-             <div class='col-md-8'>   
-                <div [innerHtml]='currentShow.summary'></div> 
-            </div> 
-        </div>
-      </div>
- </div>   
- <div class="crad-footer">
-
- </div>        
-
-
--------->    
- 
 
  

@@ -10,22 +10,6 @@ import { ActivatedRoute,Router,ParamMap } from '@angular/router';
 })
 export class AppComponent {
   title = 'tv-show-app';
-  //currentShow:IShowmap[]=[]
-
-  //constructor(private showService:ShowService,private route:ActivatedRoute,private router:Router){}
-
- /* doSearch(data){
-     this.showService.getShowMapData(data).subscribe(
-       data => { this.currentShow = data,
-        console.log(this.currentShow)
-       } 
-     )
-   }
-
-   
-   /*onActivate(event) {
-    window.scroll(0,0);
-    
-      }*/
+  
   }
 

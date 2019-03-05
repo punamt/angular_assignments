@@ -10,7 +10,7 @@ import { ActivatedRoute,Router,ParamMap } from '@angular/router';
 })
 export class CurrentShowComponent implements OnInit {
 
- //@Input() current:IShowmap[];
+ 
   
  current:IShowmap[]=[];
 
@@ -35,10 +35,7 @@ export class CurrentShowComponent implements OnInit {
         } 
       )
     }
-  /* this.showService.getShowMapData(this.value).subscribe(
-      data =>  this.current = data
-        
-    )*/
+ 
 }
        
 

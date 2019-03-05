@@ -46,11 +46,7 @@ export class ShowDataComponent implements OnInit {
         );
     }
     
-    onBack():void {
-      this.router.navigate(['/current-show']);
-      
-    }
-
+  
    
 }
  

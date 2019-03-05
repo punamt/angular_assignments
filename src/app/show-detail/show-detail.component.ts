@@ -13,10 +13,6 @@ export class ShowDetailComponent implements OnInit {
 
   search= new FormControl('',[Validators.minLength(3)])
   
-
- // @Output() searchEvent=new EventEmitter<string>();
-
- 
  
   constructor(private showService:ShowService,private route:ActivatedRoute,private router:Router) { }
 
@@ -30,7 +26,7 @@ export class ShowDetailComponent implements OnInit {
     .subscribe((data : string)=>
        { 
         if(!this.search.invalid){
-           // this.searchEvent.emit(data)
+           
           this.displaySearchResult(data)
         }
       }
@@ -39,7 +35,7 @@ export class ShowDetailComponent implements OnInit {
     }
 
     displaySearchResult(searchData:string){
-      // this.router.navigate(['/current-show']);
+      
        this.router.navigate(['/current-show',searchData]);
      }
  
@@ -47,12 +43,3 @@ export class ShowDetailComponent implements OnInit {
 
 
 
-/*modelChange(value:string){{ id: heroId, foo: 'foo' }]);
-}
-  this.search=value;
-  this.showService.getShowMapData(this.search).subscribe(
-    data =>  this.current = data
-      
-  )
-
-}*/
