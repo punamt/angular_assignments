@@ -4,7 +4,6 @@
 #detail{
     text-align: justify;
     font-style:normal; 
-    
     height:300px;
     margin-top:50px;
 }
@@ -17,6 +16,7 @@
     text-align: justify;
     font-style: oblique;
     overflow:hidden;
+    
     
 }
 
