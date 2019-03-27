@@ -7,14 +7,17 @@ import { IShowmap } from './ishowmap';
 import { Observable, throwError } from 'rxjs';
 
 
-
+export interface IShowService{
+ // getShowMapData(search:string):Observable<IShowmap[]>;
+  getShow(search:string):Observable<IShowmap>
+}
 
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class ShowService {
+export class ShowService implements IShowService{
 
   
  
