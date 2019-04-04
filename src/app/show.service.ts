@@ -8,8 +8,10 @@ import { Observable, throwError } from 'rxjs';
 
 
 export interface IShowService{
- // getShowMapData(search:string):Observable<IShowmap[]>;
-  getShow(search:string):Observable<IShowmap>
+ 
+ getShowMapData(search:string):Observable<IShowmap[]>;
+
+  getShow(search:string):Observable<IShowmap>;
 }
 
 

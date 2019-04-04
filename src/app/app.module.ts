@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
 import { WelcomeComponent } from './home/welcome.component';
 import { StarComponent } from './shared/star.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { Showservicefake } from './showservicefake.ts/showservicefake.ts.component';
+import { ShowServiceFake } from './show.service.fake';
 
 
 @NgModule({
@@ -24,7 +24,7 @@ import { Showservicefake } from './showservicefake.ts/showservicefake.ts.compone
     ShowDataComponent,
     WelcomeComponent,
     StarComponent,
-    Showservicefake.TsComponent
+    ShowServiceFake
   ],
   imports: [
     BrowserModule,
