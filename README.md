@@ -6,6 +6,7 @@ The Show metadata is displayed on user-click of the show.
  & github link: (https://github.com/punamt/angular_assignments)
 
 [Project demo](https://imgur.com/6hR7dII) Group project
+& github link: (https://github.com/Rajalakshmi-Subramani/TVShowApp)
 
 Note: Current and Previous episode links are future development areas. Currently display json data.
 
