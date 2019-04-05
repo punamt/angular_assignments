@@ -60,7 +60,7 @@ describe('ShowDetailComponent', () => {
   it('search text should not be valid (length is less than 3)',() => {
     
     component.search.setValue('a')
-    expect(component.search.valid).toBeFalsy();
+    expect(component.search.invalid).toBeTruthy();
   });
 
   it('search text should  be valid (length is 3 or more)',() => {
