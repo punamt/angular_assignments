@@ -3,7 +3,7 @@ Displays the collections of shows based on the user search.
 The Show metadata is displayed on user-click of the show. 
 
 [Project demo](https://www.youtube.com/watch?v=nxIk2ZLJKos) Individual Project
-github link https://github.com/punamt/angular_assignments
+github link (https://github.com/punamt/angular_assignments)
 
 [Project demo](https://imgur.com/6hR7dII) Group project
 
