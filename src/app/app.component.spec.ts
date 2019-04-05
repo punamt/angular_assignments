@@ -2,8 +2,8 @@ import { TestBed, async, fakeAsync,tick } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule, FormsModule, FormControl } from '@angular/forms';
-
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core"; //import material schema
  import { CurrentShowComponent } from './current-show/current-show.component';
  import { ShowDetailComponent } from './show-detail/show-detail.component';
  import { ShowDataComponent } from './show-data/show-data.component';
@@ -11,6 +11,8 @@ import { ReactiveFormsModule, FormsModule, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import {Location} from '@angular/common';
 import { StarComponent } from './shared/star.component';
+import { ShowService } from "./show.service";
+import { ShowServiceFake } from "./show.service.fake";
 
 describe('AppComponent', () => {
   let router : Router;
@@ -30,14 +32,11 @@ describe('AppComponent', () => {
       ],
       declarations: [
       AppComponent,
-       CurrentShowComponent,
        ShowDetailComponent,
-       ShowDataComponent,
        WelcomeComponent,
-       StarComponent
-
-    
       ],
+      providers: [{ provide: ShowService, useClass: ShowServiceFake }],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     }).compileComponents();
 
     //reference to injected router from testbed

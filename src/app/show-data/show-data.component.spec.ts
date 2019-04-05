@@ -1,11 +1,10 @@
 import { async, ComponentFixture, TestBed ,inject} from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientModule } from '@angular/common/http';
-import { ActivatedRoute } from '@angular/router';
 import { ShowDataComponent } from './show-data.component';
 import { StarComponent } from '../shared/star.component';
 import { ShowServiceFake } from '../show.service.fake';
-
+import { ShowService } from '../show.service';
 
 
 describe('ShowDataComponent', () => {
@@ -17,7 +16,9 @@ describe('ShowDataComponent', () => {
     
       imports:[RouterTestingModule,HttpClientModule],
       declarations: [ ShowDataComponent,StarComponent ],
-      providers:[ShowServiceFake],
+      providers: [
+        { provide: ShowService, useClass: ShowServiceFake }
+        ]
     })
     .compileComponents();
   }));
@@ -38,7 +39,7 @@ describe('ShowDataComponent', () => {
   });
 
   it('should call the service and populate the details of show', 
-  inject([ShowServiceFake],(service:ShowServiceFake) => {
+  inject([ShowService],(service:ShowService) => {
    
     service.getShow('girls').subscribe( data =>{
       expect(data.name).toBe('girls');

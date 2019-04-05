@@ -5,6 +5,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { CurrentShowComponent } from './current-show.component';
 import { ShowServiceFake } from '../show.service.fake';
+import { ShowService } from '../show.service';
 
 describe('CurrentShowComponent', () => {
   let component: CurrentShowComponent;
@@ -16,7 +17,9 @@ describe('CurrentShowComponent', () => {
       imports:[HttpClientModule,
       RouterTestingModule],
       declarations: [ CurrentShowComponent ],
-      providers:[ShowServiceFake],
+      providers: [
+      { provide: ShowService, useClass: ShowServiceFake }
+      ]
     })
     .compileComponents();
   }));
@@ -42,7 +45,7 @@ describe('CurrentShowComponent', () => {
   
 
 it('should call service and populate the value of shows', 
-  inject([ShowServiceFake],(service:ShowServiceFake) => {
+  inject([ShowService],(service:ShowService) => {
     service.getShowMapData('girls').subscribe( data =>{
       expect(data[0].name).toBe('girls');
       expect(data[0].name).not.toBe('family');
